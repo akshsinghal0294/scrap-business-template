@@ -23,7 +23,7 @@ const business = {
 
   address: "28, 29, 30, Bani Park, in front of Ahinsa Bungalows, 100 Feet Ring Road, near Pansal Chauraha, Bhilwara, Rajasthan",
 
-    mapEmbedUrl: "",
+    mapEmbedUrl: "https://www.google.com/maps?q=25.3513832,74.6101456&output=embed",
 
     timings: [
         "Monday - Sunday : 9:00 AM - 7:00 PM",

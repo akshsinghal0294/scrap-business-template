@@ -8,6 +8,11 @@ import {
     Typography
 } from "@mui/material";
 
+import CallIcon from "@mui/icons-material/Call";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import EmailIcon from "@mui/icons-material/Email";
+
 import business from "../../data/business";
 
 function Footer() {
@@ -113,17 +118,50 @@ function Footer() {
                             Contact
                         </Typography>
 
-                        <Typography>
-                            📍 {business.address}
-                        </Typography>
+                        <Stack spacing={1.5}>
 
-                        <Typography>
-                            📞 {business.phone}
-                        </Typography>
+                            <Stack direction="row" spacing={1.5} alignItems="flex-start">
+                                <LocationOnIcon fontSize="small" sx={{ mt: "2px" }} />
+                                <Typography color="grey.400">
+                                    {business.address}
+                                </Typography>
+                            </Stack>
 
-                        <Typography>
-                            💬 {business.phone}
-                        </Typography>
+                            <Stack direction="row" spacing={1.5} alignItems="center">
+                                <CallIcon fontSize="small" />
+                                <Link
+                                    href={`tel:${business.phone}`}
+                                    underline="none"
+                                    color="inherit"
+                                >
+                                    {business.phone}
+                                </Link>
+                            </Stack>
+
+                            <Stack direction="row" spacing={1.5} alignItems="center">
+                                <WhatsAppIcon fontSize="small" />
+                                <Link
+                                    href={`https://wa.me/${business.whatsapp}`}
+                                    target="_blank"
+                                    underline="none"
+                                    color="inherit"
+                                >
+                                    {business.whatsapp}
+                                </Link>
+                            </Stack>
+
+                            <Stack direction="row" spacing={1.5} alignItems="center">
+                                <EmailIcon fontSize="small" />
+                                <Link
+                                    href={`mailto:${business.email}`}
+                                    underline="none"
+                                    color="inherit"
+                                >
+                                    {business.email}
+                                </Link>
+                            </Stack>
+
+                        </Stack>
 
                     </Grid>
 

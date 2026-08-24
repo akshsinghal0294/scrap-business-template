@@ -5,7 +5,8 @@ import gallery4 from "../assets/gallery-4.jpg";
 import gallery5 from "../assets/gallery-5.jpg";
 import gallery6 from "../assets/gallery-6.jpg";
 import gallery7 from "../assets/gallery-7.jpg";
+import gallery8 from "../assets/gallery-8.jpg";
 
-const gallery = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7];
+const gallery = [gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, gallery8];
 
 export default gallery;
