@@ -181,6 +181,17 @@ function Footer() {
                     © {new Date().getFullYear()} {business.name}. All Rights Reserved.
                 </Typography>
 
+                {business.gstNumber && (
+                    <Typography
+                        textAlign="center"
+                        color="grey.500"
+                        variant="body2"
+                        mt={1}
+                    >
+                        GSTIN: {business.gstNumber}
+                    </Typography>
+                )}
+
             </Container>
         </Box>
     );

@@ -19,7 +19,9 @@ const business = {
 
 
 
-    email: "info@example.com",
+    email: "shreepanchmukhisales@gmail.com",
+
+    gstNumber: "08ARXPG6315L1Z6",
 
   address: "28, 29, 30, Bani Park, in front of Ahinsa Bungalows, 100 Feet Ring Road, near Pansal Chauraha, Bhilwara, Rajasthan",
 
