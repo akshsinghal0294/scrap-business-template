@@ -1,110 +1,61 @@
-import {
-    Box,
-    Container,
-    Grid,
-    Paper,
-    Stack,
-    Typography
-} from "@mui/material";
+import { Box, Container, Grid, Stack, Typography } from "@mui/material";
+import aboutPhoto from "../../assets/about-photo.jpg";
 
 function About() {
-    return (
-        <Box
-            sx={{
-                py: 10,
-                bgcolor: "#ffffff"
-            }}
-        >
-            <Container maxWidth="lg">
+  return (
+    <Box
+      sx={{
+        py: 10,
+        bgcolor: "#ffffff",
+      }}
+    >
+      <Container maxWidth="lg">
+        <Grid container spacing={6} alignItems="center">
+          {/* Left Side */}
 
-                <Grid
-                    container
-                    spacing={6}
-                    alignItems="center"
-                >
+          <Grid size={{ xs: 12, md: 6 }}>
+            <Typography variant="overline" color="primary" fontWeight="bold">
+              ABOUT US
+            </Typography>
 
-                    {/* Left Side */}
+            <Typography variant="h3" fontWeight={700} gutterBottom>
+              Trusted Waste Paper Buyer in Bhilwara
+            </Typography>
 
-                    <Grid size={{ xs: 12, md: 6 }}>
+            <Typography variant="body1" color="text.secondary" sx={{ mb: 4 }}>
+              We purchase all types of waste and recyclable paper, including:
+              Corrugated boxes , Paper tubes/cores , Old books , Old newspapers
+              , Brown paper , All other types of waste paper and paper scrap
+            </Typography>
 
-                        <Typography
-                            variant="overline"
-                            color="primary"
-                            fontWeight="bold"
-                        >
-                            ABOUT US
-                        </Typography>
+            <Stack spacing={2}>
+              <Typography>✔ Honest Weight</Typography>
 
-                        <Typography
-                            variant="h3"
-                            fontWeight={700}
-                            gutterBottom
-                        >
-                            Trusted Scrap Buyer in Bhilwara
-                        </Typography>
+              <Typography>✔ Best Market Price</Typography>
 
-                        <Typography
-                            variant="body1"
-                            color="text.secondary"
-                            sx={{ mb: 4 }}
-                        >
-                            We purchase all types of metal, industrial and
-                            commercial scrap at the best market price.
-                            Our focus is transparent weighing,
-                            instant payment and quick pickup service.
-                        </Typography>
+              <Typography>✔ Instant Payment</Typography>
+            </Stack>
+          </Grid>
 
-                        <Stack spacing={2}>
+          {/* Right Side */}
 
-                            <Typography>
-                                ✔ Honest Weight
-                            </Typography>
-
-                            <Typography>
-                                ✔ Best Market Price
-                            </Typography>
-
-                            <Typography>
-                                ✔ Instant Payment
-                            </Typography>
-
-                            <Typography>
-                                ✔ Doorstep Pickup
-                            </Typography>
-
-                        </Stack>
-
-                    </Grid>
-
-                    {/* Right Side */}
-
-                    <Grid size={{ xs: 12, md: 6 }}>
-
-                        <Paper
-                            elevation={2}
-                            sx={{
-                                height: 350,
-                                borderRadius: 4,
-                                display: "flex",
-                                justifyContent: "center",
-                                alignItems: "center",
-                                bgcolor: "#eeeeee"
-                            }}
-                        >
-
-                            <Typography variant="h6">
-                                About Image
-                            </Typography>
-
-                        </Paper>
-
-                    </Grid>
-
-                </Grid>
-
-            </Container>
-        </Box>
-    );
+          <Grid size={{ xs: 12, md: 6 }}>
+            <Box
+              component="img"
+              src={aboutPhoto}
+              alt="Waste paper storage warehouse"
+              sx={{
+                width: "100%",
+                height: 350,
+                borderRadius: 4,
+                objectFit: "cover",
+              }}
+            />
+          </Grid>
+        </Grid>
+      </Container>
+    </Box>
+  );
 }
 
 export default About;

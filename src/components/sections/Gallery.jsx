@@ -6,6 +6,8 @@ import {
     Typography
 } from "@mui/material";
 
+import gallery from "../../data/gallery";
+
 function Gallery() {
 
     return (
@@ -47,10 +49,10 @@ function Gallery() {
                     spacing={3}
                 >
 
-                    {[1,2,3,4,5,6].map((item)=>(
+                    {gallery.map((image, index)=>(
 
                         <Grid
-                            key={item}
+                            key={index}
                             size={{ xs:12, sm:6, md:4 }}
                         >
 
@@ -60,10 +62,6 @@ function Gallery() {
                                     height:260,
                                     borderRadius:4,
                                     overflow:"hidden",
-                                    display:"flex",
-                                    justifyContent:"center",
-                                    alignItems:"center",
-                                    bgcolor:"#e0e0e0",
                                     transition:"0.3s",
 
                                     "&:hover":{
@@ -72,11 +70,16 @@ function Gallery() {
                                 }}
                             >
 
-                                <Typography
-                                    variant="h6"
-                                >
-                                    Image {item}
-                                </Typography>
+                                <Box
+                                    component="img"
+                                    src={image}
+                                    alt={`Scrap collection ${index + 1}`}
+                                    sx={{
+                                        width: "100%",
+                                        height: "100%",
+                                        objectFit: "cover"
+                                    }}
+                                />
 
                             </Paper>
 

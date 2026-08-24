@@ -1,32 +1,33 @@
 const business = {
-    name: "ABC Scrap Dealer",
+    name: "SHREE JI PAPER WASTE AND PACKAGE",
 
     
-    owner: "Owner Name",
+    owner: "HARDIK GOYAL",
 
-    tagline: "Trusted Scrap Dealer in Bhilwara",
+    tagline: "Trusted  All types of Waste Paper Scrap in Bhilwara",
 
     description:
-        "We purchase Iron, Steel, Copper, Brass, Aluminium, Plastic and Industrial Scrap at the best market price.",
+        "We purchase all types of waste and recyclable paper, including corrugated boxes, paper tubes and cores, old books, old newspapers, brown paper, and all other types of waste paper and paper scrap.",
 
-    phone: "9876543210",
+        
+    phone: "9929200003",
 
-    whatsapp: "919876543210",
+    whatsapp: "9929200003",
 
-    address: "Bhilwara, Rajasthan",
-    mapUrl:"https://www.google.com/maps?q=25.351383209228516,74.61014556884766&z=17&hl=en",
+
+    mapUrl:"https://www.google.com/maps/place/25%C2%B021'05.0%22N+74%C2%B036'36.5%22E/@25.3513832,74.6075707,717m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d25.3513832!4d74.6101456",
 
 
 
     email: "info@example.com",
 
-    address: "Bhilwara, Rajasthan",
+  address: "28, 29, 30, Bani Park, in front of Ahinsa Bungalows, 100 Feet Ring Road, near Pansal Chauraha, Bhilwara, Rajasthan",
 
     mapEmbedUrl: "",
 
     timings: [
-        "Monday - Saturday : 9:00 AM - 7:00 PM",
-        "Sunday : Closed"
+        "Monday - Sunday : 9:00 AM - 7:00 PM",
+        
     ],
 
     social: {
