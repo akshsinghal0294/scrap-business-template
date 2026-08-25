@@ -172,6 +172,16 @@ function Footer() {
             <Link href="tel:+918560834934" underline="none" color="inherit">
               +91 8560834934
             </Link>
+            |{" "}
+            <Link
+              href="https://wa.me/918560834934"
+              target="_blank"
+              rel="noopener noreferrer"
+              underline="none"
+              color="inherit"
+            >
+              💬 WhatsApp
+            </Link>
           </Typography>
         </Box>
       </Container>
